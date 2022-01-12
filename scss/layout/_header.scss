@@ -1,0 +1,19 @@
+.header {
+  padding: 20px 0;
+  background-color: $color--blue;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .burger-menu {
+      display: none;
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+}

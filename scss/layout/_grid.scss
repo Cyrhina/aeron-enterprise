@@ -1,0 +1,50 @@
+@media (min-width: 320px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+.question-col-2 {
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 5rem;
+}
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+}
+.additional-info-col-3 {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 2rem;
+}
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}

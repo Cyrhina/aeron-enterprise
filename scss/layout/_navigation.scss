@@ -1,0 +1,36 @@
+.navigation {
+  ul {
+    li {
+      display: inline-flex;
+      flex-direction: column;
+      margin-left: 20px;
+      align-items: center;
+
+      span {
+        margin-bottom: 1rem;
+
+        @media only screen and (max-width: 768px) {
+          margin-right: 1rem;
+        }
+      }
+
+      a {
+        text-transform: uppercase;
+      }
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+        margin-bottom: 2rem;
+        margin-left: unset;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+    text-align: center;
+  }
+}
