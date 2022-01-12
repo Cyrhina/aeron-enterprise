@@ -29,6 +29,8 @@
 
     a {
       padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
       display: inline-block;
 
       @media only screen and (max-width: 768px) {
@@ -145,7 +147,7 @@
       h1 {
         font-size: 3rem;
         color: $color--blue;
-        margin-bottom: 8rem;
+        line-height: 3rem;
 
         @media only screen and (max-width: 768px) {
           text-align: center;
@@ -369,8 +371,8 @@
     .description {
       margin-top: 1rem;
       display: flex;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
 
       i {
         margin-right: 1rem;
@@ -391,9 +393,8 @@
       }
     }
     .description-img {
-      background-color: $color--lightblue;
-      display: flex;
-      align-items: center;
+      padding: 2rem;
+      text-align: center;
 
       img {
         align-items: center;
@@ -402,7 +403,7 @@
 
         @media only screen and (max-width: 900px) {
           align-items: center;
-          width: 100%;
+          width: 50%;
         }
       }
 
@@ -410,6 +411,9 @@
         align-items: center;
         width: 100%;
       }
+    }
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
     }
   }
 }
