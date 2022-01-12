@@ -10,9 +10,10 @@
     h2 {
       font-size: 4rem;
       margin-bottom: 2rem;
+      line-height: 3.6rem;
 
       @media only screen and (max-width: 768px) {
-        font-size: 2rem;
+        text-align: center;
       }
     }
   }
@@ -23,6 +24,9 @@
     a {
       padding: 1rem 2rem;
       display: inline-block;
+
+      @media only screen and (max-width: 768px) {
+      }
     }
 
     i {
@@ -116,6 +120,10 @@
     margin: 4rem 0;
 
     .map-discription {
+      img {
+        width: 100%;
+      }
+
       h1 {
         font-size: 3rem;
         color: $color--blue;
@@ -124,20 +132,26 @@
       p {
         margin-top: 2.5rem;
       }
-      img {
-        width: 100%;
-      }
+
       .map-buttons {
         margin-top: 2rem;
-        padding: 1rem;
-        background-color: $color--whitesmoke;
+        a {
+          margin-left: 2rem;
+          margin-bottom: 2rem;
+          padding: 1rem;
+          background-color: $color--whitesmoke;
+          display: inline-block;
 
-        i {
-          margin-left: 1rem;
+          i {
+            margin-left: 1rem;
+          }
         }
-      }
-      .map-buttons:hover {
-        background-color: $color--lightseagreen;
+        @media only screen and (max-width: 520px) {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+        }
       }
     }
 
@@ -184,8 +198,14 @@
       .additional-options {
         h1 {
           font-size: 3rem;
+          line-height: 3.6rem;
           color: $color--blue;
           margin-bottom: 2rem;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 2.5rem;
+            text-align: center;
+          }
         }
         ul li i {
           margin-top: 0.5rem;
@@ -214,10 +234,24 @@
           img {
             width: 50%;
             height: auto;
+            display: block;
+
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+              margin-bottom: 2rem;
+            }
           }
 
           .additional-seperate-info {
             margin: 0 1rem;
+
+            @media only screen and (max-width: 768px) {
+              margin: unset;
+            }
+          }
+
+          @media only screen and (max-width: 768px) {
+            flex-direction: column;
           }
         }
 
@@ -232,9 +266,18 @@
             height: auto;
             margin-right: 2rem;
           }
-          span {
-            font-size: 2rem;
-            color: $color--blue;
+
+          pre {
+            padding: 1rem;
+            span {
+              font-size: 2rem;
+              color: $color--blue;
+            }
+          }
+
+          @media only screen and (max-width: 768px) {
+            align-items: center;
+            width: 100%;
           }
         }
       }
@@ -278,11 +321,12 @@
         width: 20%;
         margin-left: 22rem;
         height: auto;
-      }
 
-      @media only screen and (max-width: 768px) {
-        padding: 2rem;
-        margin-left: unset;
+        @media only screen and (max-width: 768px) {
+          margin-left: unset;
+          padding: 5rem;
+          width: 40%;
+        }
       }
     }
   }
