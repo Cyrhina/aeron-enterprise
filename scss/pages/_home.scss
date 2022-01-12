@@ -173,6 +173,7 @@
 
             @media only screen and (max-width: 520px) {
               margin-left: unset;
+              text-align: center;
               margin-top: 2rem;
             }
           }
@@ -197,12 +198,10 @@
 }
 
 .additional-info {
-  padding: 2rem;
+  padding: 2rem 0;
   background-color: $color--whitesmoke;
 
   &__wrapper {
-    padding: 1rem;
-
     .additional-title {
       padding: 2rem;
       display: flex;
@@ -214,6 +213,10 @@
       h1 {
         font-size: 4rem;
         color: $color--blue;
+
+        @media only screen and (max-width: 900px) {
+          text-align: right;
+        }
       }
     }
 
@@ -222,11 +225,11 @@
 
       ul li {
         text-align: right;
+        margin: 1rem;
         font-size: 2rem;
-        padding: 1rem;
 
         @media only screen and (max-width: 900px) {
-          text-align: center;
+          text-align: right;
         }
       }
 
@@ -239,14 +242,18 @@
 
           @media only screen and (max-width: 900px) {
             font-size: 2.5rem;
-            text-align: center;
+            text-align: right;
           }
         }
         ul li i {
           margin-top: 0.5rem;
 
-          @media only screen and (max-width: 900px) {
+          @media only screen and (max-width: 678px) {
             align-items: center;
+          }
+
+          @media only screen and (max-width: 900px) {
+            align-items: right;
           }
         }
 
@@ -257,12 +264,13 @@
 
         h2 {
           font-size: 2rem;
-          padding: 1rem;
           color: $color--blue;
+        }
+        p {
+          margin-top: 2rem;
         }
 
         .additional-seperate {
-          margin-top: 4rem;
           display: flex;
           justify-content: space-between;
 
@@ -273,7 +281,6 @@
 
             @media only screen and (max-width: 900px) {
               width: 100%;
-              margin-bottom: 2rem;
             }
           }
 
@@ -291,15 +298,18 @@
         }
 
         .additional-people {
-          padding: 1rem;
           display: flex;
           margin-top: 3rem;
           justify-content: space-between;
 
           img {
-            width: 25%;
+            width: 30%;
             height: auto;
             margin-right: 2rem;
+
+            @media only screen and (max-width: 900px) {
+              width: 100%;
+            }
           }
 
           pre {
@@ -312,12 +322,19 @@
 
           @media only screen and (max-width: 900px) {
             align-items: center;
+            display: flex;
+            flex-direction: column;
             width: 100%;
           }
         }
       }
 
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 678px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media only screen and (max-width: 678px) {
         grid-template-columns: 1fr;
       }
     }
