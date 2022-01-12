@@ -24,6 +24,7 @@
       padding: 1rem 2rem;
       display: inline-block;
     }
+
     i {
       padding-left: 1rem;
     }
@@ -131,6 +132,9 @@
           margin-left: 1rem;
         }
       }
+      .map-buttons:hover {
+        background-color: $color--lightseagreen;
+      }
     }
 
     @media only screen and (max-width: 768px) {
@@ -177,9 +181,19 @@
         h1 {
           font-size: 3rem;
           color: $color--blue;
+          margin-bottom: 2rem;
         }
         ul li i {
-          margin-right: 1rem;
+          margin-top: 0.5rem;
+
+          @media only screen and (max-width: 768px) {
+            align-items: center;
+          }
+        }
+
+        ul li:hover {
+          border: 2px solid black;
+          background-color: $color--lightseagreen;
         }
 
         h2 {
@@ -202,10 +216,69 @@
             margin: 0 1rem;
           }
         }
+
+        .additional-people {
+          padding: 1rem;
+          display: flex;
+          margin-top: 3rem;
+          justify-content: space-between;
+
+          img {
+            width: 25%;
+            height: auto;
+            margin-right: 2rem;
+          }
+          span {
+            font-size: 2rem;
+            color: $color--blue;
+          }
+        }
       }
 
       @media only screen and (max-width: 768px) {
         grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+.question {
+  background-color: $color--lightblue;
+
+  &__wrapper {
+    .description {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      i {
+        margin-right: 1rem;
+        font-size: 4rem;
+      }
+      span {
+        font-size: 3rem;
+        color: $color--blue;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 2rem;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        padding: 2rem;
+      }
+    }
+    .description-img {
+      img {
+        width: 20%;
+        margin-left: 22rem;
+        height: auto;
+      }
+
+      @media only screen and (max-width: 768px) {
+        padding: 2rem;
+        margin-left: unset;
       }
     }
   }
