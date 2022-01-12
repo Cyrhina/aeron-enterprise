@@ -201,7 +201,7 @@
 }
 
 .additional-info {
-  padding: 2rem 0;
+  padding: 8rem 0;
   background-color: $color--whitesmoke;
 
   &__wrapper {
@@ -224,8 +224,6 @@
     }
 
     .additional-description {
-      padding: 2rem;
-
       ul li {
         text-align: right;
         margin: 1rem;
@@ -273,10 +271,15 @@
 
         h2 {
           font-size: 2rem;
+          margin-bottom: 2rem;
           color: $color--blue;
         }
         p {
-          margin-top: 2rem;
+          margin-bottom: 2rem;
+
+          @media only screen and (max-width: 900px) {
+            margin-top: 2rem;
+          }
         }
 
         .additional-seperate {
@@ -385,8 +388,7 @@
 
         @media only screen and (max-width: 768px) {
           margin-left: unset;
-          padding: 5rem;
-          width: 40%;
+          width: 100%;
         }
       }
     }
