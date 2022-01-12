@@ -179,10 +179,13 @@
           }
         }
         @media only screen and (max-width: 520px) {
-          text-align: center;
+          align-items: center;
           display: flex;
           flex-direction: column;
           cursor: pointer;
+        }
+        @media only screen and (max-width: 900px) {
+          text-align: center;
         }
       }
       .map-buttons a:hover {
@@ -228,8 +231,8 @@
         margin: 1rem;
         font-size: 2rem;
 
-        @media only screen and (max-width: 900px) {
-          text-align: right;
+        @media only screen and (max-width: 678px) {
+          text-align: center;
         }
       }
 
@@ -244,16 +247,22 @@
             font-size: 2.5rem;
             text-align: right;
           }
+
+          @media only screen and (max-width: 678px) {
+            font-size: 2.5rem;
+            text-align: center;
+          }
         }
         ul li i {
           margin-top: 0.5rem;
 
           @media only screen and (max-width: 678px) {
-            align-items: center;
+            text-align: center;
+            margin-right: 1rem;
           }
 
           @media only screen and (max-width: 900px) {
-            align-items: right;
+            text-align: right;
           }
         }
 
