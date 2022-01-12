@@ -16,6 +16,12 @@
         text-align: center;
       }
     }
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      justify-content: unset;
+      flex-direction: column;
+      text-align: center;
+    }
   }
   .advertisment-cta {
     background-color: $color--lightseagreen;
@@ -26,11 +32,23 @@
       display: inline-block;
 
       @media only screen and (max-width: 768px) {
+        display: block;
+        flex-direction: column;
+        cursor: pointer;
       }
     }
 
     i {
       padding-left: 1rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+      margin-top: 1rem;
+      display: block;
+      width: 100%;
+      flex-direction: column;
+      cursor: pointer;
     }
   }
   .advertisment-cta:hover {
@@ -128,6 +146,10 @@
         font-size: 3rem;
         color: $color--blue;
         margin-bottom: 8rem;
+
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
       }
       p {
         margin-top: 2.5rem;
@@ -136,14 +158,23 @@
       .map-buttons {
         margin-top: 2rem;
         a {
-          margin-left: 2rem;
-          margin-bottom: 2rem;
           padding: 1rem;
           background-color: $color--whitesmoke;
           display: inline-block;
+          cursor: pointer;
+          transition: all 0.2s ease;
 
           i {
             margin-left: 1rem;
+          }
+
+          &:last-child {
+            margin-left: 2rem;
+
+            @media only screen and (max-width: 520px) {
+              margin-left: unset;
+              margin-top: 2rem;
+            }
           }
         }
         @media only screen and (max-width: 520px) {
@@ -152,6 +183,10 @@
           flex-direction: column;
           cursor: pointer;
         }
+      }
+      .map-buttons a:hover {
+        background-color: $color--lightseagreen;
+        color: white;
       }
     }
 
@@ -190,7 +225,7 @@
         font-size: 2rem;
         padding: 1rem;
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 900px) {
           text-align: center;
         }
       }
@@ -202,7 +237,7 @@
           color: $color--blue;
           margin-bottom: 2rem;
 
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 900px) {
             font-size: 2.5rem;
             text-align: center;
           }
@@ -210,7 +245,7 @@
         ul li i {
           margin-top: 0.5rem;
 
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 900px) {
             align-items: center;
           }
         }
@@ -236,7 +271,7 @@
             height: auto;
             display: block;
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 900px) {
               width: 100%;
               margin-bottom: 2rem;
             }
@@ -245,12 +280,12 @@
           .additional-seperate-info {
             margin: 0 1rem;
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 900px) {
               margin: unset;
             }
           }
 
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 900px) {
             flex-direction: column;
           }
         }
@@ -275,14 +310,14 @@
             }
           }
 
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 900px) {
             align-items: center;
             width: 100%;
           }
         }
       }
 
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 900px) {
         grid-template-columns: 1fr;
       }
     }
