@@ -94,14 +94,13 @@
 
 .portfolio {
   background-color: $color--whitesmoke;
-  padding: 2rem 0;
+  padding: 8rem 0;
 
   &__wrapper {
-    padding: 1rem 0;
     h1 {
       font-size: 3rem;
       text-align: center;
-      margin: 4rem 0 3rem 0;
+      margin-bottom: 3rem;
       color: $color--blue;
     }
     p {
@@ -137,11 +136,9 @@
 }
 
 .map {
-  padding: 2rem 0;
+  padding: 8rem 0;
 
   &__wrapper {
-    margin: 4rem 0;
-
     .map-discription {
       img {
         width: 100%;
@@ -236,7 +233,8 @@
     .additional-description {
       ul li {
         text-align: right;
-        margin: 1rem;
+        padding: 1rem;
+        line-height: 2rem;
         font-size: 2rem;
 
         @media only screen and (max-width: 678px) {
@@ -262,7 +260,7 @@
           }
         }
         ul li i {
-          margin-top: 0.5rem;
+          margin-right: 1rem;
 
           @media only screen and (max-width: 678px) {
             text-align: center;
@@ -331,7 +329,14 @@
             margin-right: 2rem;
 
             @media only screen and (max-width: 900px) {
+              padding: 2rem 20rem;
               width: 100%;
+              margin-right: unset;
+            }
+
+            @media only screen and (max-width: 590px) {
+              padding: 2rem 0;
+              width: 60%;
               margin-right: unset;
             }
           }
@@ -370,10 +375,10 @@
 
 .question {
   background-color: $color--lightblue;
+  padding: 8rem 0;
 
   &__wrapper {
     .description {
-      margin-top: 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -397,17 +402,18 @@
       }
     }
     .description-img {
-      padding: 2rem;
       text-align: center;
 
       img {
         align-items: center;
+        padding: 1rem 20rem;
         width: 30%;
         height: auto;
 
         @media only screen and (max-width: 900px) {
           align-items: center;
-          width: 50%;
+          padding: 1rem;
+          width: 25%;
         }
       }
 
